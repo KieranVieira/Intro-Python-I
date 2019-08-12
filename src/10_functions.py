@@ -2,6 +2,12 @@
 
 # YOUR CODE HERE
 
+def is_even (num):
+    return num % 2 == 0
+
+print(is_even(2))
+print(is_even(1))
+
 # Read a number from the keyboard
 num = input("Enter a number: ")
 num = int(num)
@@ -10,3 +16,10 @@ num = int(num)
 
 # YOUR CODE HERE
 
+def print_even (num):
+    if int(num) % 2 == 0:
+        print("Even!")
+    else:
+        print("Odd")
+
+print_even(num)
