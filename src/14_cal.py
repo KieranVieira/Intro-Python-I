@@ -22,3 +22,17 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+def calendar_program(args):
+  if len(args) > 1:
+    datetime.date(args[0], args[1])
+    # use 2 args to print calendar for month and year passed as args
+  elif len(args) == 1:
+    datetime.date(year=int(args[0]))
+    # render calendar foor current month 1st argument as year
+  else:
+    # print calendar for current month
+    datetime.date()
+
+
+calendar_program(sys.argv[1::])
